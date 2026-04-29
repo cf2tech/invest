@@ -1,0 +1,21 @@
+{
+  "name": "t-invest-local-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local MVP dashboard for viewing a T-Invest portfolio and bonds.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "typecheck": "npm run typecheck --workspace server && npm run typecheck --workspace client",
+    "build": "npm run build --workspace client"
+  },
+  "devDependencies": {
+    "concurrently": "8.2.2"
+  },
+  "engines": {
+    "node": ">=16.16"
+  }
+}
