@@ -13,6 +13,7 @@ const apiPort = process.env.PORT || "3001";
 const apiTarget = process.env.VITE_API_PROXY_TARGET || `http://localhost:${apiPort}`;
 
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS ? "/invest/" : "/",
   plugins: [react()],
   server: {
     port: 5173,
