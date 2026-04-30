@@ -28,6 +28,18 @@
 npm install
 ```
 
+Для Codex Cloud environment используйте тот же setup command:
+
+```bash
+npm install
+```
+
+Проверочный command:
+
+```bash
+npm run typecheck && npm run build
+```
+
 Создайте локальный `.env` из примера:
 
 ```bash
